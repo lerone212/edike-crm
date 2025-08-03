@@ -21,7 +21,6 @@ import {
   TrendingUp
 } from 'lucide-react';
 import { useState } from 'react';
-import ChangePasswordModal from '@/components/auth/ChangePasswordModal';
 import NotificationDropdown from '@/components/notifications/NotificationDropdown';
 import AccountDropdown from '@/components/auth/AccountDropdown';
 

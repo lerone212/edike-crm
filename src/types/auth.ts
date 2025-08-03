@@ -105,6 +105,7 @@ export const NEXT_STEP_OPTIONS: Record<FunnelStage, string[]> = {
     'Share brochure / company deck',
     'Schedule a follow-up call',
     'Add to drip email campaign',
+    'Schedule Microsoft Teams meeting',
     'No immediate next step — monitor'
   ],
   interest: [
@@ -112,11 +113,13 @@ export const NEXT_STEP_OPTIONS: Record<FunnelStage, string[]> = {
     'Share case studies or testimonials',
     'Send pricing / product sheet',
     'Schedule discovery call or demo',
+    'Schedule Microsoft Teams demo',
     'Follow up in X days'
   ],
   intent: [
     'Prepare and send formal proposal',
     'Schedule proposal review meeting',
+    'Schedule Microsoft Teams proposal presentation',
     'Send meeting invite',
     'Gather requirements',
     'Confirm decision-making timeline',
@@ -128,11 +131,13 @@ export const NEXT_STEP_OPTIONS: Record<FunnelStage, string[]> = {
     'Negotiate terms',
     'Share competitive analysis',
     'Follow up to check status',
-    'Schedule final Q&A session'
+    'Schedule final Q&A session',
+    'Schedule Microsoft Teams consultation'
   ],
   decision_yes: [
     'Send contract for signature',
     'Schedule onboarding session',
+    'Schedule Microsoft Teams onboarding call',
     'Record outcome (Closed Won)',
     'Collect feedback',
     'Archive record and set reminder to re-engage later'

@@ -157,12 +157,16 @@ const VisitLogModal: React.FC<VisitLogModalProps> = ({
                   </SelectItem>
                 ))}
                 {onAddSchool && (
-                  <SelectItem value="add-new-school" onSelect={() => setShowAddSchool(true)}>
-                    <div className="flex items-center text-primary">
-                      <Plus className="h-4 w-4 mr-2" />
-                      Not on the list - Add new school
+                  <div 
+                    className="flex items-center px-2 py-1.5 text-sm cursor-pointer hover:bg-accent rounded-sm text-primary border-t"
+                    onClick={() => setShowAddSchool(true)}
+                  >
+                    <Plus className="h-4 w-4 mr-2" />
+                    Not on the list? Add new school
+                  </div>
+                      Not on the list? Add new school
                     </div>
-                  </SelectItem>
+                  </div>
                 )}
               </SelectContent>
             </Select>

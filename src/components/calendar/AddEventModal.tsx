@@ -38,6 +38,7 @@ const AddEventModal: React.FC<AddEventModalProps> = ({ onAddEvent, isAdminView, 
   const [open, setOpen] = useState(false);
   const [showAddSchool, setShowAddSchool] = useState(false);
   const [date, setDate] = useState<Date>();
+  const [schoolSearchTerm, setSchoolSearchTerm] = useState('');
   const [formData, setFormData] = useState({
     schoolName: '',
     employeeId: user?.id || '',
@@ -165,14 +166,12 @@ const AddEventModal: React.FC<AddEventModalProps> = ({ onAddEvent, isAdminView, 
                 <Button
                   type="button"
                   variant="outline"
-                  size="sm"
+                  className="flex items-center px-2 py-1.5 text-sm cursor-pointer hover:bg-accent rounded-sm text-primary border-t"
                   onClick={() => setShowAddSchool(true)}
                   className="px-3"
                 >
-                  <Plus className="h-4 w-4" />
-                </Button>
-              )}
-            </div>
+                  <Plus className="h-4 w-4 mr-2" />
+                  Not on the list? Add new school
           </div>
 
           {isAdminView && (
